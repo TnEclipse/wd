@@ -479,11 +479,11 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h2>Premium Roblox Script Hub
+            <h2>Infernium Roblox Script Hub
                 <img src="https://cdn.discordapp.com/attachments/1251962989221773352/1378465496118333480/Lapis_Lazuli_JE2_BE2.png?ex=683cb388&is=683b6208&hm=15863e1e77f730d0a96c176a7a4da3b131b086ae852a85a9778b42d31c038258&" 
                      alt="Infernium Icon" class="title-icon">
             </h2>
-            <p>Infernium offers the best scripts for your Roblox experience. Copy and paste our premium scripts directly into your executor for enhanced gameplay.</p>
+            <p>Infernium offers the best scripts for your Roblox experience. </p>
             <div class="btn-group">
                 <a href="#scripts" class="copy-btn"><i class="fas fa-scroll"></i> View Scripts</a>
                 <a href="#key" class="secondary-btn"><i class="fas fa-key"></i> Get Key</a>
@@ -493,8 +493,8 @@
 
     <section class="scripts" id="scripts">
         <div class="section-title">
-            <h2>Premium Scripts</h2>
-            <p>Copy these powerful scripts to use with your favorite executor</p>
+            <h2>Infernium Scripts</h2>
+            <p>Copy these powerful scripts to use with your favorite executor.</p>
         </div>
         <div class="script-list">
             <div class="script-item">
@@ -538,20 +538,20 @@
         <div class="faq-container">
             <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How do I use these scripts?</h3>
+                    <h3>Bla bla bla</h3>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Copy the script text and paste it into your Roblox executor. Make sure to also copy and use the access key when prompted.</p>
+                    <p>Yaddi Yadda</p>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <h3>Will these scripts get me banned?</h3>
+                    <h3>womp womp</h3>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>While we use anti detection measures, using exploits always carry some risks. Use Alt Accounts.</p>
+                    <p>placeholder here idc bla</p>
                 </div>
             </div>
             </div>
@@ -576,13 +576,11 @@
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
-        <p class="copyright">© 2024 Infernium Hub. All rights reserved. Not affiliated with Roblox Corporation.</p>
     </footer>
 
     <div class="toast" id="toast">Copied to clipboard!</div>
 
     <script>
-        // Copy functionality
         function copyToClipboard(text) {
             navigator.clipboard.writeText(text).then(() => {
                 showToast();
@@ -599,7 +597,7 @@
             }, 2000);
         }
 
-        // Script copy buttons
+        
         document.querySelectorAll('.script-copy-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 const script = btn.getAttribute('data-script');
@@ -607,25 +605,25 @@
             });
         });
 
-        // Key copy button
+        
         document.getElementById('key-copy-btn').addEventListener('click', () => {
             const key = document.getElementById('key-code').textContent;
             copyToClipboard(key);
         });
 
-        // Main copy button (also copies key)
+      
         document.getElementById('main-copy-btn').addEventListener('click', () => {
             const key = document.getElementById('key-code').textContent;
             copyToClipboard(key);
         });
 
-        // FAQ toggle functionality
+        
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const item = question.parentElement;
                 item.classList.toggle('active');
                 
-                // Close other open items
+               
                 document.querySelectorAll('.faq-item').forEach(otherItem => {
                     if (otherItem !== item && otherItem.classList.contains('active')) {
                         otherItem.classList.remove('active');
@@ -634,7 +632,7 @@
             });
         });
 
-        // Smooth scrolling for anchor links
+     
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
